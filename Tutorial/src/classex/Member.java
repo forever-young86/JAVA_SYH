@@ -63,10 +63,17 @@ public class Member {
 		this.address = address;
 	}
 
+	//@Override
+	//public String toString() {
+		//return "Member [id=" + id + ", pwd=" + pwd + ", address=" + address + "]";
+	
 	@Override
 	public String toString() {
-		return "Member [id=" + id + ", pwd=" + pwd + ", address=" + address + "]";
+		return "Member [id=" + id + ", pwd=" + pwd + "]";
 	}
-		
+	public void printMember() {
+		System.out.println("ID:" + id);
+		System.out.println("PWD:"+ pwd);
+	}
 
 }
